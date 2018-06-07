@@ -1,0 +1,27 @@
+{
+  "name": "electron-express-offline-template",
+  "version": "1.0.0",
+  "description": "Offline App template with electron ,Express ,and nedb",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/SarcasticGeek/electron-express-offline-template",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
+    "shelljs": "^0.8.2"
+  }
+}
