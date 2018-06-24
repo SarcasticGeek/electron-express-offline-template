@@ -26,7 +26,8 @@
     "electron-installer-windows": "^1.1.0",
     "electron-packager": "^12.1.0",
     "electron-squirrel-startup": "^1.0.0",
-    "electron-winstaller": "^2.6.4"
+    "electron-winstaller": "^2.6.4",
+    "pkg": "^4.3.3"
   },
   "dependencies": {
     "axios": "^0.18.0",

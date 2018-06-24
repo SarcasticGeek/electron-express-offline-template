@@ -1,10 +1,8 @@
 'use strict';
-
 var Datastore = require('nedb'),
-
+path = require('path'),
   dataDb = new Datastore({
-    filename: __dirname + '/../db/data.db',
+    filename: './db/data.db',
     autoload: true
   });
-
 module.exports = dataDb;
