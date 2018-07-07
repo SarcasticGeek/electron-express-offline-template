@@ -17,14 +17,16 @@ const exec = require('child_process').exec;
 
 function execute(command, callback) {
   exec(command, (error, stdout, stderr) => {
-    callback(stdout);
+    callback(error,stdout);
   });
 };
 
 function createWindow() {
 
   // call the function
-  execute(path.join(__dirname , './expressoapp/expressoapp.exe'), (output) => {
+  execute(path.join(__dirname.replace('app.asar', 'app.asar.unpacked') , './expressoapp/expressoapp.exe'), (err,output) => {
+    if(err)
+      console.log(err)
     console.log(output);
   });
   // Create the browser window.
