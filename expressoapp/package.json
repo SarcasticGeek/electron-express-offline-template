@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "pkg": "pkg package.json --target node8-win-x64"
+    "pkg": "pkg package.json --target node8-win-x64",
+    "pkg-linux": "pkg package.json --target node8-linux-x64"
   },
   "pkg": {
     "assets": [

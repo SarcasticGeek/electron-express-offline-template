@@ -4,6 +4,7 @@ const {
   BrowserWindow
 } = require('electron')
 var path = require('path')
+const os = require('os');
 // this should be placed at top of main.js to handle setup events quickly
 if (handleSquirrelEvent(app)) {
   // squirrel event handled and app will exit in 1000ms, so don't do anything else
@@ -23,8 +24,12 @@ function execute(command, callback) {
 
 function createWindow() {
 
+  var expressoappExeFile = './expressoapp/expressoapp';
+  if (os.platform() == 'win32') {
+    expressoappExeFile = './expressoapp/expressoapp';
+  }
   // call the function
-  execute(path.join(__dirname.replace('app.asar', 'app.asar.unpacked') , './expressoapp/expressoapp.exe'), (err,output) => {
+  execute(path.join(__dirname.replace('app.asar', 'app.asar.unpacked') , expressoappExeFile), (err,output) => {
     if(err)
       console.log(err)
     console.log(output);
