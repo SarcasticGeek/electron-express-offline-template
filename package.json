@@ -22,7 +22,7 @@
   "author": "SarcasticGeek",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^23.1.1",
+    "electron": "^35.7.5",
     "electron-installer-windows": "^2.0.0",
     "electron-packager": "^17.1.1",
     "electron-squirrel-startup": "^1.0.0",
