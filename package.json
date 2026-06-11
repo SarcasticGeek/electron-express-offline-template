@@ -23,10 +23,10 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^23.1.1",
-    "electron-installer-windows": "^2.0.0",
+    "electron-installer-windows": "^3.0.0",
     "electron-packager": "^17.1.1",
     "electron-squirrel-startup": "^1.0.0",
-    "electron-winstaller": "^4.0.0",
+    "electron-winstaller": "^5.4.0",
     "pkg": "^4.4.0"
   },
   "dependencies": {
